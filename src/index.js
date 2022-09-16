@@ -24,8 +24,7 @@ const promiseListImg = async (value, pageNumber) => {
 }
 
 function targetValueImg(e, pageNumber) {
-    console.log('rro',e);
-    value = e.target.value;
+    const value = e.target.value;
     pageNumber = 1;
     promiseListImg(value, pageNumber);
     buttonLoadMore(value ,pageNumber);
